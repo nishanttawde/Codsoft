@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="fitness.css"/>
+</head>
+<body>
+    <header>
+                <h5> &#x1F552 Mon to Sat: 6:00am-10:00pm</h5>
+                <h5> &#9990 +1 801 44567 90</h5>
+            </div>
+            <nav>
+                <div class="logo">
+                    SHAMBO FITNESS
+                </div>
+            <div class="menu" id="mymenu">
+                <a href="#" style="color: white; background-color: #9b59b6">Home</a>
+                <a href="#aboutus" style="color: white; background-color: #9b59b6">About Us</a>
+                <a href="#pricing" style="color: white; background-color: #9b59b6">Pricing</a>
+                <a href="#contactus" style="color: white; background-color: #9b59b6">Contact Us</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <h3>Gym, Dancing and Yoga</h3>
+                <h1>SHAPE
+                    YOURSELF
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem obcaecati a omnis
+                     eveniet recusandae et saepe, laboriosam assumenda ipsa, quibusdam quia soluta eius distinctio quam,
+                      repudiandae molestias ex maiores similique?</p>
+                      <button>Learn More</button>
+                      <button>Contact Us</button>
+            </div>
+            <div class="right">
+                <img src="/Codsoft/Landing Page/fit1.jpg">
+            </div>
+        </div>
+        <div class="aboutus" id="aboutus">
+            <h2>About</h2>
+            <div class="left1">
+                <img src="/Codsoft/Landing Page/fit2.jpg">
+            </div>
+            <div class="right1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis accusantium tempore
+                     amet nemo at, optio obcaecati a assumenda, et repellendus perspiciatis
+                      harum fuga corrupti veritatis eos reprehenderit! Consectetur, nemo?</p>
+            </div>
+        </div>
+        <div class="container2" id="pricing">
+            <h2>Choose your plan</h2>
+            <div class="price-row">
+                <div class="price-col">
+                    <p>Silver Plan</p>
+                    <h3>5000 <span>/ year</span></h3>
+                    <ul>
+                        <li>Free Tutorials</li>
+                        <li>Aerobic Programmes</li>
+                        <li>Trainer Support</li>
+                        <li>Open Gym</li>
+                        <li>Gymnastics</li>
+                    </ul>
+                    <button>Add To Cart</button>
+                </div>
+                <div class="price-col">
+                    <p>Gold Plan</p>
+                    <h3>7000 <span>/ year</span></h3>
+                    <ul>
+                        <li>Free Tutorials</li>
+                        <li>Aerobic Programmes</li>
+                        <li>Trainer Support</li>
+                        <li>Fitness Orientation</li>
+                        <li>Gymnastics</li>
+                    </ul>
+                    <button>Add To Cart</button>
+                </div>
+                <div class="price-col">
+                    <p>Diamond Plan</p>
+                    <h3>10000 <span>/ year</span></h3>
+                    <ul>
+                        <li>Free Tutorials</li>
+                        <li>Aerobic Programmes</li>
+                        <li>Trainer Support</li>
+                        <li>Fitness Orientation</li>
+                        <li>Morning and Evening Batches</li>
+                    </ul>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-forms" id="contactus">
+            <div class="main-forms">
+                <div class="container1">
+                    <div class="form-container1 signup-container1">
+                        <form action="">
+                            <h1>Create an Account</h1>
+                            <span>or use your email for registration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" name="" id="" placeholder="Email" />
+                            <input type="password" name="" id="" placeholder="Password" />
+                            <button>Sign up</button>
+                        </form>
+                    </div>
+                    <div class="form-container1 signin-container1">
+                        <form action="">
+                            <h1>Sign In</h1>
+                                <span>or use your account</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" name="" id="" placeholder="Email" />
+                            <input type="password" name="" id="" placeholder="Password" />
+                            <a href="">Forgot your password</a>
+                            <button>Sign In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container1">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back</h1>
+                                <p>
+                                    To keep connected with us please login with your personal info
+                                </p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friends!</h1>
+                                <p>
+                                    Enter your personal details and start your journey with us!
+                                </p>
+                                <button class="ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <p>This webpage was created for the course "html and css" by Nishant Tawde
+                    <br />
+                    This webpage is for study purpose.
+                <p>
+                    Build with &#128150 in the beautiful city of Mumbai on December 12, 2023.
+                </p>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mymenu");
+                if (x.className === "menu") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "menu";
+                }
+            }
+    
+            const signUpButton = document.getElementById("signUp");
+            const signInButton = document.getElementById("signIn");
+            const container = document.getElementById("container");
+    
+            signInButton.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+    
+            signUpButton.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+    </header>
+</body>
+</html>
